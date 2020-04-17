@@ -24,7 +24,7 @@ def throw_egg(n)
 lower_than_floorf = []
 floorf_or_higher = []
 
-if max(lower_than_floorf) = (min(floorf_or_higher) - 1):
+for values > 0 if max(lower_than_floorf) = (min(floorf_or_higher) - 1):
 return min(min(floorf_or_higher)
 
 if -1 egg:
@@ -35,4 +35,4 @@ else:
 lower_than_floorf = n
 throw_egg(n +1)
 
-Run through the above and then run a basecase method to stop the function where the two arrays meet. This is recursive with a liner run time, O(n)
+This is recursive with a liner run time, O(n)
