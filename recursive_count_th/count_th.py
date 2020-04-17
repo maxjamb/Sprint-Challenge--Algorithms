@@ -10,17 +10,14 @@ Your function must utilize recursion. It cannot contain any loops.
 #   * It cannot contain any loops.
 
 def count_th(word, idx=0):
-    th_count = 0
     tested_words = []
-    if word == 0 or len(word) <= 1:
-        return th_count
-    else if word[idx] == 't' and word[idx+1] == 'h':
-        th_count += 1
-        tested_letters = [word[idx], word[idx+1]]
-        untested_letters = word[1:]
-        return count_th(untested_letters, idx+1)
-    else:
-        return count_th(word, idx+1)
+    if len(word) <= 1:
+        return 0
+    else: 
+        if word[0] == 't' and word[1] == 'h':
+            return 1 + count_th(word[2:])
+        else: 
+            return 0 + count_th(word[1:])
 
 
 # word.strip('th')

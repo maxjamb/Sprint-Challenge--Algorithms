@@ -7,18 +7,22 @@ pseudocode with respect to the input size n of each of the following:
 
 ```python
 a)  a = 0
-    while (a < n * n * n):
-      a = a + n * n
+    while (a < n * n * n): n**3
+      a = a + n * n => a + n**2
 ```
 
 ```
-b)  sum = 0
-    for i in range(n):
-      j = 1
+b)  sum = 0  O(1)
+    for i in range(n):  O(N)
+      j = 1  O(1)
       while j < n:
-        j *= 2
-        sum += 1
+        j *= 2  O(logN) anytime somethign doubles it's a logN
+        sum += 1 O(1)
 ```
+
+O(NlogN)
+
+whenever something is nested you multiply them together
 
 ```
 c)  def bunnyEars(bunnies):

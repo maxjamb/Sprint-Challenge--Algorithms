@@ -2,11 +2,11 @@
 
 ## Exercise I
 
-a) O(1)
+a) O(n)
 
     The number of calculations remain the same no matter how large n gets
 
-b) O(n)
+b) O(nlogn)
 
     The number of calculations will increase in line with the input
 
