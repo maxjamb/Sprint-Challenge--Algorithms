@@ -1,15 +1,38 @@
-#### Please add your answers to the ***Analysis of  Algorithms*** exercises here.
+#### Please add your answers to the **_Analysis of Algorithms_** exercises here.
 
 ## Exercise I
 
-a)
+a) O(n)
 
+    The number of calculations remain the same no matter how large n gets
 
-b)
+b) O(nlogn)
 
+    The number of calculations will increase in line with the input
 
-c)
+c) O(n)
+
+    The number of calcualtions will increase inline with the input, essentially returning 2 until it hits the base case of 0.
 
 ## Exercise II
 
+Suppose that you have an n-story building and plenty of eggs. Suppose also that an egg gets broken if it is thrown off floor f or higher, and doesn't get broken if dropped off a floor less than floor f. Devise a strategy to determine the value of f such that the number of dropped + broken eggs is minimized.
 
+Write out your proposed algorithm in plain English or pseudocode AND give the runtime complexity of your solution.
+
+def throw_egg(n)
+lower_than_floorf = []
+floorf_or_higher = []
+
+for values > 0 if max(lower_than_floorf) = (min(floorf_or_higher) - 1):
+return min(min(floorf_or_higher)
+
+if -1 egg:
+floorf_or_higher = n
+return throw_egg(n -1)
+
+else:
+lower_than_floorf = n
+throw_egg(n +1)
+
+This is recursive with a liner run time, O(n)
